@@ -1,0 +1,8 @@
+{
+    "layers": [
+        "general",
+        "framework/laravel",
+        "package/mutation-testing",
+        "package/filament"
+    ]
+}
