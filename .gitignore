@@ -33,6 +33,7 @@ Thumbs.db
 /.ci/
 /boost.json
 /.mcp.json
+/_reference/
 /public/css/filament
 /public/fonts/filament
 /public/js/filament
