@@ -1,9 +1,10 @@
 {
     "schema_version": 2,
-    "package_version": "v0.7.0",
+    "package_version": "v0.8.0",
     "layers": [
         "general",
         "framework/laravel",
+        "package/mariadb",
         "package/mutation-testing",
         "package/filament"
     ],
@@ -15,9 +16,10 @@
         },
         "docs/project_guidelines/architecture.md": {
             "block": "architecture",
-            "sha256": "ec60e1f30334aec77a9e65e51f08c0ed4c477e624eda383d493f4de4d1b0df4e",
+            "sha256": "b81957aff7f5098cf760388e97bb5595557145cf9d5e2448fe242c53cb51cc13",
             "sources": {
-                "framework/laravel/architecture.md": "1a0d609a9497862c9eb3b323faf7772ff900c8fc2fdec16dcd3dde197c3711ea",
+                "framework/laravel/architecture.md": "a95924c9634bc70e4c1f79b2106a2e2b3c76e6800b48c4be8b65bee7c00e281c",
+                "package/mariadb/architecture.md": "115b66dddf0fd6a0a55a06ed088dfc5f4e4b88869347333c6e24df07cfa58684",
                 "package/filament/architecture.md": "f264ff94d84d8fd4d43b166b9a676e3aeaa2b1bc511960da3b951860c06dbccf"
             }
         },
@@ -44,10 +46,10 @@
         },
         "docs/project_guidelines/deployment.md": {
             "block": "deployment",
-            "sha256": "9766808793ae89e20c346453146f804cd386220b853a26e77d2f274c86cf0d59",
+            "sha256": "f0ca0e37a8ef7801cded49a3ca490f9b3b525e0bc7e8b6adff450573a4463f1f",
             "sources": {
-                "general/deployment.md": "6a0cc72512f2e7e0796582d15b7d1c91c43cf39ce52a93e8107c857ae49e5635",
-                "framework/laravel/deployment.md": "0efd7cc1a37f0ebbeccdc5ca2806622f94e958fb0c8ee7fd437a1fa79a881ccb"
+                "general/deployment.md": "a3854c3907b94602ea4891198084f21903f2bd7ff7b62152bde36d5527db108a",
+                "framework/laravel/deployment.md": "86704671358db70b0cec9f8a592cb98376999439619d8a2039f64a97095400e4"
             }
         },
         "docs/project_guidelines/documentation.md": {
@@ -74,7 +76,7 @@
         },
         "docs/project_guidelines/index.md": {
             "block": "index",
-            "sha256": "45760e8e769e68e1d4595d31f1b5f3ae53e5446418f6e5ffec84be4fd2c26237"
+            "sha256": "75d972aa9878963a930c85ee105dcb3515b02660c0da0fb90ca14105ca27d9a8"
         },
         "docs/project_guidelines/public-website.md": {
             "block": "public-website",
@@ -85,32 +87,34 @@
         },
         "docs/project_guidelines/requests-and-validation.md": {
             "block": "requests-and-validation",
-            "sha256": "35fb656067518e384cfbfa087acb6aee22385dc6c6e90f371d3c1aaa6f1df903",
+            "sha256": "632815f39300aae1ee834533fc6744377c6d30a6b11722ecfbb48b0f9385af41",
             "sources": {
-                "framework/laravel/requests-and-validation.md": "7f6d89fa8967e8436551d027369786ef372fe8108a97985ff01392a02a1a1095"
+                "framework/laravel/requests-and-validation.md": "1cd4d920cf09dcd3824cc6a098cf67650ce33f819ed02601f20c68f6ecfb55a1"
             }
         },
         "docs/project_guidelines/security-and-data.md": {
             "block": "security-and-data",
-            "sha256": "d9ad76bd229196158b18303583fc3f358391b390394b777ef80766b58b09b788",
+            "sha256": "1fe6d50217e9de743a4132f9c1b8810265d1c998eb244c7b59e383227603d9d8",
             "sources": {
-                "general/security-and-data.md": "08c938cbe9006bc1204b0fd9b06a4c4ff912e09849ba28392695360025d696c3"
+                "general/security-and-data.md": "47e7dfb6021cdebf97ecc04990c5a65680046493734fe83e51e836518764e083"
             }
         },
         "docs/project_guidelines/testing.md": {
             "block": "testing",
-            "sha256": "cbe558b8f429b3fa0ebeea78bae12444d30925800d34676561798dd18bb90b9a",
+            "sha256": "55453703bafc997cff87daeb435ffb43f86cec6f3ce6169a9f1d07fcd8ada7b2",
             "sources": {
                 "general/testing.md": "816fff945efef9a04a9caf1373e532bcb015c1b7496632dba2d6fc7216e411d6",
-                "framework/laravel/testing.md": "b0a9d7241fb509762b440754f05987ac231a1936dbf5f44a11c7129adab89f01",
+                "framework/laravel/testing.md": "ae3df83ab6675f00c5de9dc138752817c1870997dfff2a34b73ed75cf86bebc1",
+                "package/mariadb/testing.md": "61edcbdc8a712416f9985da53ffa84e6761a0ac1964e107d8a13260cd8c91bd7",
                 "package/mutation-testing/testing.md": "2fd4a00c1b15fa664ac1990aa7f3b3d0cbe66029b0d974aee3c5b25990343a2e"
             }
         },
         "docs/project_guidelines/tools.md": {
             "block": "tools",
-            "sha256": "3403562051cbdab0a13dc7c49fea057f1db1c5ea309b9b619d2e3cd0d78e0963",
+            "sha256": "fd8fa903cef5dbc363c9a0196cf389b0ee054659be3f34b90d07676779590c43",
             "sources": {
-                "framework/laravel/tools.md": "33ce1c0e33b7594cd973a72709b9f529c951a5d79468ab4dcac34b94d805884d",
+                "framework/laravel/tools.md": "5d9d25251a42cccf927c317eab4000604658e4d3d2ab2245954b7774bc79eac7",
+                "package/mariadb/tools.md": "f827d6e7684c002b5352f5f2e2c304298dc0f77060e8cb6db1ecc6455556a971",
                 "package/mutation-testing/tools.md": "edca9fbe3c3b1b910f01124c354b664f848dfdc15ff7718807456460855fbe5a"
             }
         },
