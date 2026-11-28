@@ -22,10 +22,14 @@ use Illuminate\Notifications\Notifiable;
 #[Fillable(['name', 'email', 'password'])]
 #[Hidden(['password', 'remember_token'])]
 #[UseFactory(UserFactory::class)]
-class User extends Authenticatable implements FilamentUser
+class User extends Authenticatable implements
+    // @esoul-slot user-interfaces
+    FilamentUser
 {
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
+
+    // @esoul-slot user-traits
 
     /**
      * Only administrators may open the admin panel. `is_admin` is deliberately not mass assignable;
